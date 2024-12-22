@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>视觉影像显示与采集系统</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QLabel" name="label_camera">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>20</y>
+                        <width>360</width>
+                        <height>270</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>原始摄像头视频</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_processed">
+                <property name="geometry">
+                    <rect>
+                        <x>400</x>
+                        <y>20</y>
+                        <width>360</width>
+                        <height>270</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>添加特效后的视频</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_openCamera">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>320</y>
+                        <width>150</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>打开摄像头</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_closeCamera">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>320</y>
+                        <width>150</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>关闭摄像头</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_saveFrame">
+                <property name="geometry">
+                    <rect>
+                        <x>400</x>
+                        <y>320</y>
+                        <width>150</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>保存当前帧</string>
+                </property>
+            </widget>
+            <widget class="QComboBox" name="comboBox_cameraSelect">
+                <property name="geometry">
+                    <rect>
+                        <x>600</x>
+                        <y>320</y>
+                        <width>150</width>
+                        <height>40</height>
+                    </rect>
+                </property>
+                <property name="currentText">
+                    <string>选择摄像头</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
